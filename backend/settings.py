@@ -54,7 +54,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,6 +66,17 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'users.uauth.authentication.JwtAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticated',),
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+}
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
@@ -115,6 +126,15 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+
+STATIC_URL = '/static/'
+STATICFILES_DIR = BASE_DIR / '/static/'
+STATIC_ROOT = BASE_DIR / 'static/'
+
+MEDIA_URL = '/media/'
+MEDIAFILES_DIR = BASE_DIR / '/media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
 
 
 # Static files (CSS, JavaScript, Images)

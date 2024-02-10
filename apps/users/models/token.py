@@ -20,7 +20,7 @@ class Token(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name=_('Created at'))
 
     def __str__(self):
-        return self.user
+        return f'{self.user}'
 
     def save(self, *args, **kwargs):
         if not self.jwt:

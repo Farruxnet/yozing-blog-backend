@@ -18,7 +18,9 @@ def start(message):
 @bot.message_handler(commands=['login'])
 def login(message):
     random_ = random_otp()
-    redis_client.setex(f'otp_{random_}', 60, random_)
+
+    redis_client.hset(name=f'otp_{random_}', mapping={'otp': str(random_), 'user': str(message.chat.id)})
+    redis_client.expire(f'otp_{random_}', 60)
     full_name = message.chat.first_name
     if message.chat.last_name:
         full_name += ' ' + message.chat.last_name

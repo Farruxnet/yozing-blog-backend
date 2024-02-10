@@ -38,4 +38,4 @@ class User(AbstractUser):
         verbose_name = _('User')
         verbose_name_plural = _('Users')
         db_table = 'users'
-        ordering = ['id']
+        ordering = ['-id']
