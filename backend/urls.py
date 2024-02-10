@@ -21,7 +21,7 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('__admin/', admin.site.urls),
     path('bot-hook/', csrf_exempt(hook)),
     path('user/', include('users.urls')),
 
