@@ -2,7 +2,7 @@ from django.contrib.auth.hashers import make_password
 
 from bot.helpers.bot import bot
 from bot.helpers.random_otp import random_otp
-from bot.helpers.redis_db import redis_client
+from bot.helpers.redis_db import redis_client, save_otp_to_redis
 from users.models import User
 
 
@@ -18,10 +18,10 @@ def start(message):
 @bot.message_handler(commands=['login'])
 def login(message):
     random_ = random_otp()
+    save_otp_to_redis(random_otp=random_, message=message)
 
-    redis_client.hset(name=f'otp_{random_}', mapping={'otp': str(random_), 'user': str(message.chat.id)})
-    redis_client.expire(f'otp_{random_}', 60)
     full_name = message.chat.first_name
+
     if message.chat.last_name:
         full_name += ' ' + message.chat.last_name
 
@@ -34,6 +34,6 @@ def login(message):
 
     bot.send_message(
         message.chat.id,
-        text=f"Sizning kodingiz: `{random_}`\n\nAmal qilish muddati 1 daq.",
+        text=f"OTP: `{random_}`",
         parse_mode='MarkDown'
     )
