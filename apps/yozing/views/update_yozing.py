@@ -6,11 +6,12 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from yozing.models import Yozing
+from yozing.permissions.is_owner import IsOwner
 from yozing.serializers.yozing import YozingUpdateSerializer
 
 
 class YozingUpdateView(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, IsOwner]
 
     @swagger_auto_schema(request_body=YozingUpdateSerializer)
     def put(self, request, pk):
