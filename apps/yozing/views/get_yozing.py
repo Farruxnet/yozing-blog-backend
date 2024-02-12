@@ -1,11 +1,11 @@
 from rest_framework.generics import ListAPIView
 
 from yozing.models import Yozing
-from yozing.serializers.yozing import YozingGetSerializer
+from yozing.serializers.yozing import YozingListSerializer
 
 
 class YozingListView(ListAPIView):
-    serializer_class = YozingGetSerializer
+    serializer_class = YozingListSerializer
 
     def get_queryset(self):
         search_params = self.request.query_params.get('search')

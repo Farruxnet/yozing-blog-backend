@@ -10,7 +10,7 @@ from yozing.models import Yozing
 class YozingDeleteView(APIView):
     permission_classes = [IsAuthenticated]
 
-    def delete(self, pk, request):
+    def delete(self, request, pk):
         instance = get_object_or_404(Yozing, id=pk)
         instance.delete()
         return Response({}, status=status.HTTP_204_NO_CONTENT)
