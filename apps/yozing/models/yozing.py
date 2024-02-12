@@ -3,6 +3,7 @@ from django.utils.translation import gettext_lazy as _
 
 from backend import settings
 from helpers.models import Categories, Tags
+from yozing.querysets.yozing import YozingQuerySet
 
 
 class Yozing(models.Model):
@@ -28,7 +29,8 @@ class Yozing(models.Model):
         verbose_name=_("Updated by"),
         related_name="updated_yozings"
     )
-
+    objects = YozingQuerySet.as_manager()
+    
     def __str__(self):
         return self.name
 

@@ -23,8 +23,11 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('__admin/', admin.site.urls),
     path('bot-hook/', csrf_exempt(hook)),
+
     path('user/', include('users.urls')),
     path('helpers/', include('helpers.urls')),
+    path('yozing/', include('yozing.urls')),
+
     path('api/docs/swagger<format>', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('api/docs/swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger'),
 ]
