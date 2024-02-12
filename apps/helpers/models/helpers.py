@@ -1,9 +1,13 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
+from helpers.querysets.category import CategoryQuerySet
+from helpers.querysets.tags import TagQuerySet
+
 
 class Tags(models.Model):
     name = models.CharField(max_length=128, unique=True, verbose_name=_('Name'))
+    objects = TagQuerySet.as_manager()
 
     def __str__(self):
         return self.name
@@ -17,6 +21,7 @@ class Tags(models.Model):
 
 class Categories(models.Model):
     name = models.CharField(max_length=128, unique=True, verbose_name=_('Name'))
+    objects = CategoryQuerySet.as_manager()
 
     def __str__(self):
         return self.name
