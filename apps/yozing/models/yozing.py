@@ -35,12 +35,10 @@ class Yozing(models.Model):
     def __str__(self):
         return self.name
 
-    @property
-    def get_image(self):
-        if self.image:
-            return self.image
-        else:
-            return '/media/blog-post.png'
+    def save(self, *args, **kwargs):
+        if not self.image:
+            self.image = 'blog-post.png'
+        super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = _("Post")
