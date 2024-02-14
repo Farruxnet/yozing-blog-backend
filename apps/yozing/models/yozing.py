@@ -10,7 +10,7 @@ class Yozing(models.Model):
     name = models.CharField(max_length=255, verbose_name=_("Name"))
     text = models.TextField(verbose_name=_("Text"))
     tags = models.ManyToManyField(Tags, verbose_name=_("Tags"))
-    image = models.ImageField(upload_to='images/yozing/', verbose_name=_("Image"), null=True, blank=True)
+    image = models.ImageField(upload_to='images/yozing/', verbose_name=_("Image"), null=True, blank=True, default='blog-post.png')
     categories = models.ManyToManyField(Categories, verbose_name=_("Categories"))
 
     created_at = models.DateTimeField(auto_now_add=True, verbose_name=_("Created at"))
