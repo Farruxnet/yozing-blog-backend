@@ -4,6 +4,8 @@
 ```bash
 docker compose up -d
 ```
+Create an .env file in environments/{DIRS} before running Docker.
+environment/{DIRS} has examples like .env.example
 
 ## Step 2: Install pip packages
 ```bash
