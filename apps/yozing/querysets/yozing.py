@@ -4,7 +4,7 @@ from django.db.models import QuerySet
 class YozingQuerySet(QuerySet):
 
     def search(self, search=None):
-        query = self
+        query = self.prefetch_related('categories', 'tags').select_related('created_by', 'updated_by')
         return query
 
     def my_posts(self, user):

@@ -1,3 +1,4 @@
+from django.db import connection
 from rest_framework.generics import ListAPIView
 
 from yozing.models import Yozing

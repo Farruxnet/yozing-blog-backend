@@ -35,11 +35,14 @@ INSTALLED_APPS = [
     'drf_yasg',
     'users',
     'helpers',
-    'yozing'
+    'yozing',
+    'query_counter',
 ]
 
 MIDDLEWARE = [
+    'backend.middleware.YozingMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'query_counter.middleware.DjangoQueryCounterMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
