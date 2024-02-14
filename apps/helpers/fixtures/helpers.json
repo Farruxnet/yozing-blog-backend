@@ -1,0 +1,380 @@
+[
+  {
+    "model": "helpers.tags",
+    "pk": 1,
+    "fields": {
+      "name": "technologytrends"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 2,
+    "fields": {
+      "name": "gadgets"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 3,
+    "fields": {
+      "name": "softwaredevelopment"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 4,
+    "fields": {
+      "name": "artificialintelligence(ai)"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 5,
+    "fields": {
+      "name": "internetofthings(iot)"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 6,
+    "fields": {
+      "name": "cybersecurity"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 7,
+    "fields": {
+      "name": "datascience"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 8,
+    "fields": {
+      "name": "machinelearning"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 9,
+    "fields": {
+      "name": "programminglanguages"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 10,
+    "fields": {
+      "name": "mobileapps"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 11,
+    "fields": {
+      "name": "webdevelopment"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 12,
+    "fields": {
+      "name": "techreviews"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 13,
+    "fields": {
+      "name": "virtualreality(vr)"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 14,
+    "fields": {
+      "name": "augmentedreality(ar)"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 15,
+    "fields": {
+      "name": "blockchain"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 16,
+    "fields": {
+      "name": "cloudcomputing"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 17,
+    "fields": {
+      "name": "digitalmarketing"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 18,
+    "fields": {
+      "name": "techeventsandconferences"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 19,
+    "fields": {
+      "name": "startups"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 20,
+    "fields": {
+      "name": "technews"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 21,
+    "fields": {
+      "name": "productivitytools"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 22,
+    "fields": {
+      "name": "codingtips"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 23,
+    "fields": {
+      "name": "techcareers"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 24,
+    "fields": {
+      "name": "robotics"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 25,
+    "fields": {
+      "name": "hardware"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 26,
+    "fields": {
+      "name": "techethics"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 27,
+    "fields": {
+      "name": "smarthomes"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 28,
+    "fields": {
+      "name": "5gtechnology"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 29,
+    "fields": {
+      "name": "spacetechnology"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 30,
+    "fields": {
+      "name": "futuristictech"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 31,
+    "fields": {
+      "name": "opensource"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 32,
+    "fields": {
+      "name": "techeducation"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 33,
+    "fields": {
+      "name": "userexperience(ux)"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 34,
+    "fields": {
+      "name": "techinnovations"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 35,
+    "fields": {
+      "name": "3dprinting"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 36,
+    "fields": {
+      "name": "healthtech"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 37,
+    "fields": {
+      "name": "bioinformatics"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 38,
+    "fields": {
+      "name": "quantumcomputing"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 39,
+    "fields": {
+      "name": "bigdata"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 40,
+    "fields": {
+      "name": "techhacks"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 41,
+    "fields": {
+      "name": "digitaltransformation"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 42,
+    "fields": {
+      "name": "techpolicyandregulation"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 43,
+    "fields": {
+      "name": "scienceandtechnology"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 44,
+    "fields": {
+      "name": "socialmedia"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 45,
+    "fields": {
+      "name": "e-commercetechnology"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 46,
+    "fields": {
+      "name": "techforeducation"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 47,
+    "fields": {
+      "name": "programmingframeworks"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 48,
+    "fields": {
+      "name": "techhumor"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 49,
+    "fields": {
+      "name": "techandsociety"
+    }
+  },
+  {
+    "model": "helpers.tags",
+    "pk": 50,
+    "fields": {
+      "name": "mobilegaming"
+    }
+  },
+    {
+    "model": "helpers.tags",
+    "pk": 51,
+    "fields": {
+      "name": "ai"
+    }
+  },
+    {
+    "model": "helpers.tags",
+    "pk": 52,
+    "fields": {
+      "name": "ux"
+    }
+  },
+    {
+    "model": "helpers.tags",
+    "pk": 53,
+    "fields": {
+      "name": "ui"
+    }
+  },
+    {
+    "model": "helpers.tags",
+    "pk": 54,
+    "fields": {
+      "name": "iot"
+    }
+  }
+]

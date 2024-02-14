@@ -67,7 +67,7 @@ class Rules(models.Model):
     cookie_policy = models.TextField(verbose_name=_('Cookie Policy'))
 
     def __str__(self):
-        return _("Rules")
+        return f'{_("Rules")}'
 
     class Meta:
         verbose_name = _("Rule")

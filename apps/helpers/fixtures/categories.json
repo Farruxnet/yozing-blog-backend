@@ -1,0 +1,212 @@
+[
+  {
+    "model": "helpers.categories",
+    "pk": 1,
+    "fields": {
+      "name": "Technology"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 2,
+    "fields": {
+      "name": "Science"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 3,
+    "fields": {
+      "name": "Health"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 4,
+    "fields": {
+      "name": "Business"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 5,
+    "fields": {
+      "name": "Finance"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 6,
+    "fields": {
+      "name": "Travel"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 7,
+    "fields": {
+      "name": "Food & Cooking"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 8,
+    "fields": {
+      "name": "Lifestyle"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 9,
+    "fields": {
+      "name": "Personal Development"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 10,
+    "fields": {
+      "name": "Fitness & Wellness"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 11,
+    "fields": {
+      "name": "Education"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 12,
+    "fields": {
+      "name": "Career"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 13,
+    "fields": {
+      "name": "Design & Art"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 14,
+    "fields": {
+      "name": "Photography"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 15,
+    "fields": {
+      "name": "Music"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 16,
+    "fields": {
+      "name": "Film & TV"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 17,
+    "fields": {
+      "name": "Literature"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 18,
+    "fields": {
+      "name": "Gaming"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 19,
+    "fields": {
+      "name": "Sports"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 20,
+    "fields": {
+      "name": "Home & Gardening"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 21,
+    "fields": {
+      "name": "Parenting"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 22,
+    "fields": {
+      "name": "Relationships"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 23,
+    "fields": {
+      "name": "Fashion"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 24,
+    "fields": {
+      "name": "Beauty & Skincare"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 25,
+    "fields": {
+      "name": "Environmental Sustainability"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 26,
+    "fields": {
+      "name": "Social Issues"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 27,
+    "fields": {
+      "name": "Self-Improvement"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 28,
+    "fields": {
+      "name": "Motivation & Inspiration"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 29,
+    "fields": {
+      "name": "Technology Trends"
+    }
+  },
+  {
+    "model": "helpers.categories",
+    "pk": 30,
+    "fields": {
+      "name": "Startup & Entrepreneurship"
+    }
+  }
+]
