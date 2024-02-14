@@ -2,6 +2,9 @@ from django.contrib import admin
 
 from users.models import User, Token
 
+admin.AdminSite.site_title = "Yozing.Blog"
+admin.AdminSite.site_header = "Yozing.Blog"
+
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
