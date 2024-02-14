@@ -1,16 +1,16 @@
 # Install
 
-## Run docker compose
+## Step 1: Run docker compose
 ```bash
 docker compose up -d
 ```
 
-## Install pip packages
+## Step 2: Install pip packages
 ```bash
 pip install -r requirements.txt
 ```
 
-## Load fixtures data
+## Step 3: Load fixtures data
 ```bash
 python manage.py loaddata users
 python manage.py loaddata helpers
@@ -18,13 +18,13 @@ python manage.py loaddata categries
 python manage.py loaddata content
 ```
 
-## Load post data
+## Step 4: Load post data
 ```bash
 python manage.py load_yozing
 ```
 
 
-## Remove post data
+## Optional: Remove post data
 ```bash
 python manage.py remove_yozing
 ```
