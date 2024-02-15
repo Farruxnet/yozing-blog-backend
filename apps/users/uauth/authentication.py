@@ -7,6 +7,7 @@ from users.models import Token
 
 class JwtAuthentication(TokenAuthentication):
     def authenticate_credentials(self, jwt):
+        print(123)
         token = Token.objects.filter(jwt=jwt, jwt_expires__gte=timezone.now()).first()
         if token is None:
             raise AuthenticationFailed({'detail': _('Invalid or expired token.'), 'logout': 'true'})
