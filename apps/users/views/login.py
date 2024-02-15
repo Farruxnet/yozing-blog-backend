@@ -1,5 +1,6 @@
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import status
+from rest_framework.renderers import JSONRenderer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.utils.translation import gettext_lazy as _
@@ -9,6 +10,7 @@ from users.serializers.login import LoginSerializer, JwtSerializer
 
 
 class LoginView(APIView):
+    renderer_classes = [JSONRenderer]
 
     @swagger_auto_schema(tags=["Users"], request_body=LoginSerializer, responses={200: JwtSerializer()})
     def post(self, request):

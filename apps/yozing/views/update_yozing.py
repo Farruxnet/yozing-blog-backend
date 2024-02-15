@@ -2,6 +2,7 @@ from drf_yasg.utils import swagger_auto_schema
 from rest_framework import status
 from rest_framework.generics import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -12,6 +13,7 @@ from yozing.serializers.yozing import YozingUpdateSerializer
 
 class YozingUpdateView(APIView):
     permission_classes = [IsAuthenticated, IsOwner]
+    renderer_classes = [JSONRenderer]
 
     @swagger_auto_schema(request_body=YozingUpdateSerializer)
     def put(self, request, pk):

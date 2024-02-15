@@ -1,3 +1,4 @@
+from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.generics import get_object_or_404
@@ -10,6 +11,7 @@ from yozing.permissions.is_owner import IsOwner
 
 class YozingDeleteView(APIView):
     permission_classes = [IsAuthenticated, IsOwner]
+    renderer_classes = [JSONRenderer]
 
     def delete(self, request, pk):
         instance = get_object_or_404(Yozing, id=pk)

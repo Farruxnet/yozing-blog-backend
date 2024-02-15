@@ -2,6 +2,7 @@ from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.generics import ListAPIView
 from rest_framework.permissions import AllowAny
+from rest_framework.renderers import JSONRenderer
 
 from yozing.models import Yozing
 from yozing.serializers.yozing import YozingListSerializer
@@ -10,6 +11,7 @@ from yozing.serializers.yozing import YozingListSerializer
 class UsersPostsView(ListAPIView):
     serializer_class = YozingListSerializer
     permission_classes = [AllowAny]
+    renderer_classes = [JSONRenderer]
 
     def get_queryset(self):
         user_id = self.request.query_params.get('user_id')

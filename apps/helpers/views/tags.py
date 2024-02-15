@@ -1,6 +1,7 @@
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.generics import ListAPIView
+from rest_framework.renderers import JSONRenderer
 
 from helpers.models import Tags
 from helpers.serializers.tags import TagSerializer
@@ -8,6 +9,7 @@ from helpers.serializers.tags import TagSerializer
 
 class TagsListView(ListAPIView):
     serializer_class = TagSerializer
+    renderer_classes = [JSONRenderer]
 
     def get_queryset(self):
         search_params = self.request.query_params.get('search')

@@ -8,7 +8,7 @@ class YozingQuerySet(QuerySet):
         return query
 
     def my_posts(self, user):
-        query = self.filter(created_by=user)
+        query = self.filter(created_by=user).prefetch_related('categories', 'tags').select_related('created_by', 'updated_by')
         return query
 
     def users_posts(self, user_id):
