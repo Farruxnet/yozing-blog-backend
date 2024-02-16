@@ -1,6 +1,5 @@
 version: '3.8'
 
-
 services:
   redis:
     image: 'bitnami/redis:latest'
@@ -21,7 +20,37 @@ services:
       - '5432:5432'
     volumes:
       - ~/docker-yozing:/var/lib/postgresql/data
+  app:
+    user: root
+    container_name: yozing-app
+    build:
+      context: .
+    volumes:
+      - ./static:/app/static
+      - ./media:/app/media
+    depends_on:
+      - redis
+      - db
+  proxy:
+    user: root
+    container_name: yozing-proxy
+    build:
+      context: ./proxy
+    restart: always
+    volumes:
+      - ./proxy/default.conf:/etc/nginx/conf.d/default.conf
+      - ./proxy/proxy_params:/etc/nginx/proxy_params
+      - ./static:/app/static
+      - ./media:/app/media
+    ports:
+      - '80:80'
+    depends_on:
+      - app
 
 volumes:
+  static:
+    driver: local
+  media:
+    driver: local
   db:
     driver: local
